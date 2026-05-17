@@ -1,0 +1,539 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* @import url('http://example.com/example_style.css'); */\
+\
+/***********************************************/\
+/* CSS @imports must be at the top of the file */\
+/* Add them above this section                 */\
+/***********************************************/\
+\
+/*****************************************/\
+/* Start your style declarations here    */\
+/*****************************************/\
+/*\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+  JUST RIGHT READER \'97 BOOK HUB STYLES\
+  File: css/book-hub-styles.css\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+*/\
+\
+@font-face \{\
+  font-family: "JRR Poppins";\
+  src: url("https://pages.justrightreader.com/hubfs/JRR_Poppins-Bold.ttf") format("truetype");\
+  font-display: swap;\
+  font-weight: 700;\
+\}\
+\
+@font-face \{\
+  font-family: "JRR Poppins";\
+  src: url("https://pages.justrightreader.com/hubfs/JRR_Poppins-Regular.ttf") format("truetype");\
+  font-display: swap;\
+  font-weight: 400;\
+\}\
+\
+/* \uc0\u9472 \u9472  Reset \u9472 \u9472  */\
+*,\
+*::before,\
+*::after \{\
+  box-sizing: border-box;\
+  margin: 0;\
+  padding: 0;\
+\}\
+\
+/* \uc0\u9472 \u9472  Design Tokens \u9472 \u9472  */\
+:root \{\
+  /* --book-bg is set dynamically in the template <style> block\
+     because CSS files can't contain template variables          */\
+  --white: #ffffff;\
+  --ink: #1a1a2e;\
+  --mid: #4a5568;\
+  --accent: #e63946;\
+  --card-radius: 20px;\
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.1);\
+  --shadow-hover: 0 10px 40px rgba(0, 0, 0, 0.16);\
+\}\
+\
+html,\
+body \{\
+  font-family: 'JRR Poppins';\
+  background-color: var(--book-bg, #d6eaf8);\
+  color: var(--ink);\
+  min-height: 100vh;\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   HEADER\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+.jrr-header \{\
+  background: var(--white);\
+  top: 0;\
+  z-index: 100;\
+  padding: 20px 0px;\
+  height: 72px;\
+  display: flex;\
+  align-items: center;\
+\}\
+\
+.jrr-header__inner \{\
+  max-width: 1100px;\
+  width: 100%;\
+  margin: 0 auto;\
+  display: flex;\
+  align-items: center;\
+  justify-content: center;\
+\}\
+\
+.jrr-header__logo img \{\
+  height: 48px;\
+  width: auto;\
+  max-width: 100%;\
+  object-fit: contain;\
+  display: block;\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   MAIN WRAPPER\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+.jrr-main \{\
+  max-width: 860px;\
+  margin: 0 auto;\
+  padding: 56px 24px 80px;\
+  display: flex;\
+  flex-direction: column;\
+  gap: 22px;\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   BOOK TITLE & SKILL\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+.jrr-book-header \{\
+  text-align: center;\
+  animation: fadeUp 0.6s ease both;\
+\}\
+\
+.jrr-book-skill \{\
+  display: flex;\
+  background: rgba(255, 255, 255, 0.7);\
+  border: 2px solid rgba(0, 0, 0, 0.08);\
+  border-radius: 100px;\
+  font-size: 1rem;\
+  font-weight: 800;\
+  letter-spacing: 0.05em;\
+  text-transform: uppercase;\
+  color: #000000;\
+  padding: 6px 18px;\
+  margin-top: 20px;\
+  text-align: center;\
+  align-self: center;\
+\}\
+\
+.jrr-book-title \{\
+  font-family: 'JRR Poppins';\
+  font-size: clamp(2.8rem, 5vw, 3.4rem);\
+  font-weight: bold;\
+  line-height: 1.15;\
+  color: var(--ink);\
+  margin-bottom: 5px;\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   VIDEO EMBED\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+.jrr-video-wrap \{\
+  background: var(--white);\
+  border-radius: var(--card-radius);\
+  box-shadow: var(--shadow);\
+  overflow: hidden;\
+  animation: fadeUp 0.6s 0.1s ease both;\
+\}\
+\
+.jrr-video-wrap__ratio \{\
+  position: relative;\
+  padding-bottom: 56.25%; /* 16:9 */\
+  height: 0;\
+\}\
+\
+.jrr-video-wrap__ratio iframe \{\
+  position: absolute;\
+  inset: 0;\
+  width: 100%;\
+  height: 100%;\
+  border: none;\
+  display: block;\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   SHOWCASE BUTTON WRAPPER\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+.jrr-showcase-wrap \{\
+  display: flex;\
+  justify-content: center;\
+  animation: fadeUp 0.6s 0.2s ease both;\
+\}\
+\
+.jrr-showcase-btn \{\
+  display: inline-block;\
+  transition: transform 0.18s ease, box-shadow 0.18s ease;\
+  overflow: hidden;\
+  max-width: 375px;\
+  margin-top: -10px;\
+  margin-bottom: 35px;\
+\}\
+\
+.jrr-showcase-btn:hover \{\
+  transform: translateY(-5px);\
+\}\
+\
+.jrr-showcase-btn img \{\
+  display: block;\
+  max-width: 100%;\
+  height: auto;\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   BUTTONS\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+.btn \{\
+  display: inline-flex;\
+  align-items: center;\
+  gap: 8px;\
+  border-radius: 100px;\
+  font-family: 'JRR Poppins';\
+  font-weight: bold;\
+  font-size: 0.95rem;\
+  text-decoration: none;\
+  cursor: pointer;\
+  border: none;\
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;\
+\}\
+\
+.btn:hover \{\
+  transform: translateY(-2px);\
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);\
+\}\
+\
+/* Dark */\
+.btn-primary \{\
+  background: var(--ink);\
+  color: var(--white);\
+  padding: 14px 32px;\
+\}\
+.btn-primary:hover \{\
+  background: #2d2d4e;\
+\}\
+\
+/* Outline */\
+.btn-secondary \{\
+  background: var(--white);\
+  color: var(--ink);\
+  padding: 12px 28px;\
+  font-size: 0.88rem;\
+\}\
+.btn-secondary:hover \{\
+  background: var(--ink);\
+  color: var(--white);\
+\}\
+\
+/* Red */\
+.btn-accent \{\
+  background: var(--accent);\
+  color: var(--white);\
+  padding: 12px 28px;\
+\}\
+.btn-accent:hover \{\
+  background: #c1121f;\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   RESOURCE CARDS\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+.jrr-card \{\
+  background: var(--white);\
+  border-radius: var(--card-radius);\
+  box-shadow: var(--shadow);\
+  display: grid;\
+  grid-template-columns: 310px 1fr;\
+  overflow: hidden;\
+  transition: box-shadow 0.2s ease, transform 0.2s ease;\
+  animation: fadeUp 0.6s 0.3s ease both;\
+\}\
+\
+.jrr-card__image \{\
+  position: relative;\
+  overflow: hidden;\
+\}\
+\
+.jrr-card__image img \{\
+  width: 100%;\
+  height: 100%;\
+  object-fit: cover;\
+  display: block;\
+  transition: transform 0.4s ease;\
+\}\
+\
+.jrr-card__body \{\
+  padding: 32px 36px;\
+  display: flex;\
+  flex-direction: column;\
+  justify-content: center;\
+  gap: 16px;\
+\}\
+\
+.jrr-card__tag \{\
+  font-size: 0.75rem;\
+  font-weight: 800;\
+  letter-spacing: 0.12em;\
+  text-transform: uppercase;\
+  color: var(--mid);\
+  opacity: 0.7;\
+\}\
+\
+.jrr-card__title \{\
+  font-family: 'JRR Poppins';\
+  font-size: 1.5rem;\
+  font-weight: 700;\
+  line-height: 1.2;\
+  color: var(--ink);\
+\}\
+\
+.jrr-card__desc \{\
+  font-size: 0.92rem;\
+  color: var(--mid);\
+  line-height: 1.6;\
+\}\
+\
+.jrr-card__actions \{\
+  display: flex;\
+  flex-direction: column;\
+  gap: 10px;\
+  align-items: flex-start;\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   LESSON PLAN DROPDOWN\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+.jrr-lesson-select-wrap \{\
+  display: flex;\
+  flex-direction: column;\
+  gap: 10px;\
+  width: 100%;\
+\}\
+\
+.jrr-lesson-select-label \{\
+  font-size: 0.8rem;\
+  font-weight: 800;\
+  letter-spacing: 0.08em;\
+  text-transform: uppercase;\
+  color: var(--mid);\
+\}\
+\
+.jrr-lesson-select-row \{\
+  display: flex;\
+  gap: 10px;\
+  align-items: center;\
+  flex-wrap: wrap;\
+\}\
+\
+.jrr-lesson-select \{\
+  appearance: none;\
+  background: #f8f9fb\
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%231a1a2e' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E")\
+    no-repeat right 14px center;\
+  border: 2px solid #e2e8f0;\
+  border-radius: 10px;\
+  font-family: 'JRR Poppins';\
+  font-weight: bold;\
+  font-size: 0.9rem;\
+  color: var(--ink);\
+  padding: 10px 40px 10px 14px;\
+  cursor: pointer;\
+  transition: border-color 0.2s ease;\
+  flex: 1;\
+  min-width: 200px;\
+\}\
+\
+.jrr-lesson-select:focus \{\
+  outline: none;\
+  border-color: var(--ink);\
+\}\
+\
+.jrr-divider \{\
+  border: none;\
+  border-top: 1.5px solid #e9ecef;\
+  margin: 4px 0;\
+\}\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   CARD \'97 CAREGIVER (purple)\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+.jrr-card--caregiver \{\
+  background: #662ed6;\
+\}\
+\
+.jrr-card--caregiver .jrr-card__tag,\
+.jrr-card--caregiver .jrr-card__title,\
+.jrr-card--caregiver .jrr-card__desc \{\
+  color: #ffffff;\
+\}\
+\
+.jrr-card--caregiver .btn-accent \{\
+  background: #e5dbf9;\
+  color: #000000;\
+  border: none;\
+\}\
+\
+.jrr-card--caregiver .btn-accent:hover \{\
+  background: #caaeff;\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   CARD \'97 TEACHER (blue)\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+.jrr-card--teacher \{\
+  background: #47bdff;\
+\}\
+\
+.jrr-card--teacher .jrr-card__tag,\
+.jrr-card--teacher .jrr-card__title,\
+.jrr-card--teacher .jrr-card__desc,\
+.jrr-card--teacher .jrr-lesson-select-label \{\
+  color: #000000;\
+\}\
+\
+.jrr-card--teacher .btn-primary \{\
+  background: #0076d6;\
+  color: #ffffff;\
+  border: none;\
+\}\
+\
+.jrr-card--teacher .btn-primary:hover \{\
+  background: #075ea5;\
+  box-shadow: none;\
+\}\
+\
+.jrr-card--teacher .btn-secondary \{\
+  background: #d6f0ff;\
+  color: #000000;\
+\}\
+\
+.jrr-card--teacher .btn-secondary:hover \{\
+  background: #bde2f8;\
+  color: #000000;\
+\}\
+\
+.jrr-card--teacher .jrr-divider \{\
+  border-top-color: rgba(0, 0, 0, 0.15);\
+\}\
+.btn:disabled,\
+.btn[disabled] \{\
+  opacity: 0.4;\
+  cursor: not-allowed;\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   ANIMATIONS\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+@keyframes fadeUp \{\
+  from \{\
+    opacity: 0;\
+    transform: translateY(20px);\
+  \}\
+  to \{\
+    opacity: 1;\
+    transform: translateY(0);\
+  \}\
+\}\
+\
+/* 
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0 \
+   RESPONSIVE\
+
+\f1 \'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54\'a8\'54
+\f0  */\
+@media (max-width: 680px) \{\
+  .jrr-header \{\
+    padding: 0 20px;\
+  \}\
+\
+  .jrr-main \{\
+    padding: 36px 16px 60px;\
+    gap: 22px;\
+  \}\
+\
+  .jrr-card \{\
+    grid-template-columns: 1fr;\
+  \}\
+\
+  .jrr-card__image \{\
+    min-height: 180px;\
+    max-height: 220px;\
+  \}\
+\
+  .jrr-card__body \{\
+    padding: 24px 22px;\
+  \}\
+\
+  .jrr-lesson-select-row \{\
+    flex-direction: column;\
+    align-items: stretch;\
+  \}\
+\
+  .jrr-lesson-select \{\
+    min-width: unset;\
+  \}\
+  .jrr-showcase-btn \{\
+    max-width:300px;\
+  \}}
