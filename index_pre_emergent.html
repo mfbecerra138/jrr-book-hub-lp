@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">{% require_css %}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--book-bg: {{ module.book_color|default("#000000") }};</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">{% end_require_css %}</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;header class="jrr-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="jrr-header__inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="https://justrightreader.com/" aria-label="Just Right Reader Home"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img</p>
+<p class="p1"><span class="Apple-converted-space">        </span>src="https://learn.justrightreader.com/hs-fs/hubfs/Logo%20-B%26G%20Line.png?width=4677&amp;height=600&amp;name=Logo%20-B%26G%20Line.png"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alt="Just Right Reader"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>style="max-width: 275px"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;main class="jrr-main"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="jrr-book-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1 class="jrr-book-title"&gt;{{ module.book_title }}&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="jrr-book-skill"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Phonics Lesson (English)</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="jrr-video-wrap" role="region" aria-label="Video: {{ module.book_title }}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="jrr-video-wrap__ratio"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;iframe</p>
+<p class="p1"><span class="Apple-converted-space">      </span>src="https://player.vimeo.com/video/{{ module.book_vimeo_id }}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>title="Video player for {{ module.book_title }}"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>frameborder="0"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/iframe&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="jrr-showcase-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a</p>
+<p class="p1"><span class="Apple-converted-space">      </span>href="{{ module.book_showcase_url.href if module.book_showcase_url.href else module.book_showcase_url }}"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>target="_blank"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>rel="noopener noreferrer"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>class="jrr-showcase-btn"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img</p>
+<p class="p1"><span class="Apple-converted-space">        </span>src="https://21778604.fs1.hubspotusercontent-na1.net/hubfs/21778604/2026%20Book%20Hub%20Landing%20Pages/New%20Buttons/%23{{ module.book_color|replace('#', '') }}.png"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alt="Watch in More Languages Button"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Writing Activity Heading --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2 class="jrr-book-skill"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Writing Activity (English)</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Writing Activity Video --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="jrr-video-wrap" role="region" aria-label="Video: Writing Activity for {{ module.book_title }}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="jrr-video-wrap__ratio"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;iframe</p>
+<p class="p1"><span class="Apple-converted-space">      </span>src="https://player.vimeo.com/video/{{ module.book_writing_vimeo_id }}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>title="Video player for Writing Activity: {{ module.book_title }}"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>frameborder="0"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/iframe&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Activity Showcase Button --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="jrr-showcase-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a</p>
+<p class="p1"><span class="Apple-converted-space">      </span>href="{{ module.activity_showcase_url.href if module.activity_showcase_url.href else module.activity_showcase_url }}"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>target="_blank"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>rel="noopener noreferrer"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>class="jrr-showcase-btn"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img</p>
+<p class="p1"><span class="Apple-converted-space">        </span>src="https://21778604.fs1.hubspotusercontent-na1.net/hubfs/21778604/2026%20Book%20Hub%20Landing%20Pages/New%20Buttons/%23{{ module.book_color|replace('#', '') }}.png"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alt="Watch Activity in More Languages Button"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;article class="jrr-card jrr-card--caregiver" aria-label="Resources for Caregivers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="jrr-card__image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img</p>
+<p class="p1"><span class="Apple-converted-space">        </span>src="https://21778604.fs1.hubspotusercontent-na1.net/hubfs/21778604/2026%20Book%20Hub%20Landing%20Pages/BookHub_Family%20Resources.png"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alt="Caregiver reading with child"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="jrr-card__body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="jrr-card__title"&gt;Family &amp;amp; Peer Tutoring Resources&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="jrr-card__desc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Help your child build a love of reading at home. Explore activities,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>print-outs, and more!</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="jrr-card__actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a</p>
+<p class="p1"><span class="Apple-converted-space">          </span>href="https://justrightreader.com/pages/learning-together"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>class="btn btn-accent"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>target="_blank"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>rel="noopener noreferrer"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>Family &amp;amp; Peer Tutoring Resources</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/article&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;article class="jrr-card jrr-card--teacher" aria-label="Resources for Teachers"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="jrr-card__image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img</p>
+<p class="p1"><span class="Apple-converted-space">        </span>src="https://21778604.fs1.hubspotusercontent-na1.net/hubfs/21778604/2026%20Book%20Hub%20Landing%20Pages/BookHub_Teacher%20Resources.png"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>alt="Teacher resources spread including guides and phonics worksheets"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="jrr-card__body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="jrr-card__title"&gt;Teacher Resources&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">     </span>&lt;div class="jrr-lesson-select-wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;label class="jrr-lesson-select-label" for="lesson-plan-select-{{ name }}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Select a Lesson Plan</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="jrr-lesson-select-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;select</p>
+<p class="p1"><span class="Apple-converted-space">      </span>class="jrr-lesson-select"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>id="lesson-plan-select-{{ name }}"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>onchange="updateLessonLink_{{ name|replace('-', '_') }}(this)"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;option value="" disabled selected&gt;Select lesson plan…&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{% if module.lesson_plan_1_url %}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="{{ module.lesson_plan_1_url.href if module.lesson_plan_1_url.href else module.lesson_plan_1_url }}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>National Lesson Plan</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{% endif %}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{% if module.lesson_plan_2_url %}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;option value="{{ module.lesson_plan_2_url.href if module.lesson_plan_2_url.href else module.lesson_plan_2_url }}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>California Lesson Plan</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/option&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>{% endif %}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/select&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button</p>
+<p class="p1"><span class="Apple-converted-space">      </span>id="lesson-plan-go-btn-{{ name }}"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>class="btn btn-primary"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>style="white-space: nowrap;"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>disabled</p>
+<p class="p1"><span class="Apple-converted-space">      </span>aria-disabled="true"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>View Lesson Plan</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;hr class="jrr-divider" /&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="jrr-card__actions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;a</p>
+<p class="p1"><span class="Apple-converted-space">    </span>href="https://justrightreader.com/pages/free-teacher-resources"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>class="btn btn-secondary"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>target="_blank"</p>
+<p class="p1"><span class="Apple-converted-space">    </span>rel="noopener noreferrer"</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>All Teacher Resources</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/article&gt;</p>
+<p class="p1">&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">{% require_js position="footer" %}</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>function updateLessonLink_{{ name|replace('-', '_') }}(selectEl) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var btn = document.getElementById("lesson-plan-go-btn-{{ name }}");</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var url = selectEl.value;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>if (url &amp;&amp; url !== "#") {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>btn.disabled = false;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>btn.removeAttribute("aria-disabled");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>btn.onclick = function() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.open(url, "_blank", "noopener,noreferrer");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>};</p>
+<p class="p1"><span class="Apple-converted-space">    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>btn.disabled = true;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>btn.setAttribute("aria-disabled", "true");</p>
+<p class="p1"><span class="Apple-converted-space">      </span>btn.onclick = null;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">{% end_require_js %}</p>
+</body>
+</html>
